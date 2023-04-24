@@ -1,0 +1,28 @@
+.card-component{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}.services-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.services-heading{
+    margin-bottom: 2.5rem;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 500px)  {
+    .card-component{
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 990px)  {
+    .card-component{
+        justify-content: center;
+    }
+}

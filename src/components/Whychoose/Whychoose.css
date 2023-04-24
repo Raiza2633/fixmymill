@@ -1,0 +1,27 @@
+.solve-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.solve-heading{
+    margin-bottom: 2.5rem;
+    text-decoration: underline;
+    font-family: 'Barlow Condensed';
+}
+
+.image-card-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+@media only screen and (max-width: 624px){
+    .image-card-container{
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+}

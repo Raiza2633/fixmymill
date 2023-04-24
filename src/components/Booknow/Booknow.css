@@ -1,0 +1,13 @@
+.booknow-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.booknow-heading{
+        margin-bottom: 2.5rem;
+        text-decoration: underline;
+        font-family: 'Barlow Condensed';
+}

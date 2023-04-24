@@ -1,0 +1,228 @@
+.userpage-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f0f2f5;
+  font-family: "Nunito";
+}
+.userpage-container .left {
+  width: 30%;
+  max-width: 30%;
+  background: black;
+  color: white;
+  /* border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px; */
+}
+.userpage-container .right {
+  width: 70%;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  flex-direction: column;
+  padding-left: 5rem;
+}
+.userpage-container input {
+  border: 1px solid #cbcbcb;
+  border-radius: 9px;
+  width: 100%;
+  margin-top: 1.25rem;
+  outline: none;
+}
+.input-field-profile {
+  width: 600px;
+  height: 60px;
+  border-radius: 9px;
+}
+.userpage-container .inner-wrapper {
+  margin: 2rem 1.25rem;
+  margin-top: 3.75rem;
+}
+
+.userpage-container .profile-name {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+.userpage-container .profile-avatar {
+  display: none;
+}
+.userpage-container .profile-list-container {
+  padding: 0.625rem;
+  margin: 0.625rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.userpage-container .profile-list-container .left-content {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.userpage-container .profile-list-container:hover {
+  background: white;
+  color: #000;
+  border-radius: 6px;
+}
+.userpage-container .profile-list-container.active-tab {
+  background: #fff;
+  color: #000;
+  border-radius: 6px;
+}
+.userpage-container hr {
+  height: 1px;
+}
+.userpage-container form,
+.userpage-container .insights-container {
+  /* max-width: 59rem; */
+  max-width: 85%;
+  margin-top: calc(5.625rem - 2.36rem);
+}
+
+.userpage-container .save-btn {
+  align-self: flex-end;
+  display: flex;
+  margin-right: 5.5rem;
+  margin-top: 5.25rem;
+}
+.userpage-container .save-btn button {
+  background: black;
+  cursor: pointer;
+  padding: 1rem 2.6rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 12px;
+}
+
+.userpage-container .input-container {
+  color: #cbcbcb;
+}
+.userpage-container .input-container label {
+  text-transform: capitalize;
+}
+.userpage-container .input-container.active {
+  color: #000;
+}
+.userpage-container .input-container.active input {
+  color: #000;
+  border: 1px solid #000;
+}
+.userpage-container .insights-container .insights-bar {
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  border-radius: 9px;
+  font-size: 1.5rem;
+}
+.userpage-container .insights-container .insights-table {
+  border: 1px solid black;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem 5rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.userpage-container .insights-container .insights-table .insights-row {
+  margin: 1rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.show-sidebar {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .userpage-container .insights-container .insights-table {
+    padding: 1rem 2.5rem;
+  }
+}
+
+@media screen and (max-width: 764px) {
+  .userpage-container .insights-container .insights-table {
+    padding: 1rem 1.4rem;
+  }
+  .userpage-container .right {
+    padding-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .userpage-container h3 {
+    font-size: 14px;
+  }
+  .userpage-container .right {
+    width: 100%;
+    padding: 2rem;
+  }
+  .userpage-container .left {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: -700px;
+    max-width: 100%;
+    height: 100%;
+    transition: 0.5s all ease;
+    background: #fff;
+    color: #000;
+  }
+  .userpage-container form,
+  .userpage-container .insights-container {
+    max-width: 100%;
+    margin-top: 1rem;
+  }
+  .userpage-container .save-btn {
+    margin-right: 0;
+    width: 100%;
+    margin-top: 2.2rem;
+  }
+  .userpage-container .save-btn button {
+    font-size: 1.25rem;
+    width: 100%;
+  }
+  .userpage-container .input-container {
+    margin-top: 1.2rem;
+  }
+  .userpage-container .input-container label {
+    font-size: 14px;
+  }
+  .userpage-container .input-container input {
+    margin-top: 0.5rem;
+  }
+  .show-sidebar {
+    display: flex;
+    gap: 0.6rem;
+    cursor: pointer;
+    align-items: center;
+  }
+  .userpage-container .profile-avatar {
+    display: block;
+    margin-bottom: 14px;
+  }
+  .userpage-container .profile-avatar svg {
+    font-size: 5rem;
+  }
+  .userpage-container .insights-container .insights-bar {
+    display: none;
+  }
+  .userpage-container .profile-list-container:hover,
+  .userpage-container .profile-list-container.active-tab {
+    background: #000;
+    color: #fff;
+    margin: 0;
+    padding: 1.25rem;
+  }
+  .userpage-container .left hr {
+    visibility: hidden;
+  }
+}
